@@ -1,0 +1,8 @@
+{% extends "panel.html.twig" %}
+
+{% block before %}<div class="mw7">{% endblock %}
+{% block title %}Settings{% endblock %}
+{% block body %}
+    {{ helper("displays").render(form, {"operation": "update"}) }}
+{% endblock %}
+{% block after %}</div>{% endblock %}
